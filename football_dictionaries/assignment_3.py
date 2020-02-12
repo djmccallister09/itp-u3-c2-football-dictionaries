@@ -23,6 +23,6 @@ def players_by_country_and_position(squads_list):
         country = player['country']
         position = player['position']
         by_country.setdefault(country,{})
-        by_country.setdefault(position,[])
+        by_country[country].setdefault(position,[])
         by_country[country][position].append(player)
     return by_country
