@@ -12,5 +12,5 @@ def players_as_dictionaries(squads_list):
         'position': player[1],
         'year': player[8]
         }
-    players_list.append(players_dict)
+        players_list.append(players_dict)
     return players_list
