@@ -1,5 +1,5 @@
-def players_as_dictionaries(squads_list):
-    players_list = []
+def players_by_position(squads_list):
+    players_as_dictionaries = []
     for player in squads_list:
         players_dict = {
         'caps' : player[4],
@@ -12,11 +12,11 @@ def players_as_dictionaries(squads_list):
         'position': player[1],
         'year': player[8]
         }
-        players_list.append(players_dict)
-    return players_list
+        players_as_dictionaries.append(players_dict)
+    
 
-def players_by_position(squads_list):
-    squad = players_as_dictionaries(squad_list)
+
+    squad = players_as_dictionaries
     by_position = {}
     
     for player in squad:
